@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#gameScreen {
+  border: 1px solid black;
+  width: 800px;
+  height: 600px;
+}
