@@ -1,25 +1,12 @@
 import React from 'react';
+import Breakout from './Breakout/Breakout'
 
-class App extends React.Component {
-  componentDidMount() {
-    this.updateCanvas();
-  }
-
-  updateCanvas() {
-    const ctx = this.refs.canvas.getContext('2d');
-    ctx.fillStyle = '#f00'
-    ctx.fillRect(20, 20, 100, 100);
-  }
-  
-  render() {
+function App() {
     return (
       <main className='App'>
-        <canvas ref='canvas'>
-  
-        </canvas>
+        <Breakout/>
       </main>
     )
-  }
 }
 
 export default App;
