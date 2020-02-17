@@ -1,6 +1,7 @@
 import React from 'react';
 import Paddle from './paddle';
 import InputHandler from './input';
+import ball from './avocado.png'
 
 class Breakout extends React.Component {
   componentDidMount() {
@@ -38,6 +39,9 @@ class Breakout extends React.Component {
   render() {
     return (
       <div>
+
+        <img id='img_ball' src={ball} alt='ball'></img>
+
         <canvas ref='canvas' width='800' height='600'></canvas>
       </div>
     )
